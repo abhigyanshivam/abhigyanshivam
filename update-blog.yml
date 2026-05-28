@@ -1,0 +1,90 @@
+name: Update Blog Posts
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (11:30 IST)
+    - cron: "0 6 * * *"
+  workflow_dispatch: # Allow manual trigger from the Actions tab
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser requests
+
+      - name: Fetch latest blog posts and update README
+        env:
+          # Add your RSS feed URLs here (comma-separated)
+          # Medium : https://medium.com/feed/@yourusername
+          # Substack: https://yourusername.substack.com/feed
+          RSS_FEEDS: "https://medium.com/feed/@yourusername,https://yourusername.substack.com/feed"
+          MAX_POSTS: "5"
+        run: |
+          python - <<'PYEOF'
+          import feedparser, os, re, datetime
+
+          feeds_raw = os.environ.get("RSS_FEEDS", "")
+          max_posts = int(os.environ.get("MAX_POSTS", "5"))
+          feed_urls = [u.strip() for u in feeds_raw.split(",") if u.strip()]
+
+          entries = []
+          for url in feed_urls:
+              feed = feedparser.parse(url)
+              source_name = feed.feed.get("title", url.split("/")[2])
+              for e in feed.entries:
+                  pub = e.get("published_parsed") or e.get("updated_parsed")
+                  dt  = datetime.datetime(*pub[:6]) if pub else datetime.datetime.min
+                  entries.append({
+                      "title":   e.get("title", "Untitled"),
+                      "link":    e.get("link", "#"),
+                      "date":    dt.strftime("%b %d, %Y"),
+                      "source":  source_name,
+                      "dt_obj":  dt,
+                  })
+
+          # Sort newest-first, take top N
+          entries.sort(key=lambda x: x["dt_obj"], reverse=True)
+          entries = entries[:max_posts]
+
+          # Build markdown list
+          lines = []
+          for idx, e in enumerate(entries, 1):
+              lines.append(
+                  f"- [{e['title']}]({e['link']}) — {e['source']} · {e['date']}"
+              )
+
+          block = "\n".join(lines)
+
+          readme_path = "README.md"
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          pattern = r"(<!-- BLOG-POST-LIST:START -->).*?(<!-- BLOG-POST-LIST:END -->)"
+          replacement = rf"\1\n{block}\n\2"
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          with open(readme_path, "w", encoding="utf-8") as f:
+              f.write(new_content)
+
+          print(f"Updated README with {len(entries)} blog post(s).")
+          PYEOF
+
+      - name: Commit and push changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "No changes to commit." || \
+            git commit -m "chore: auto-update blog posts [skip ci]" && git push

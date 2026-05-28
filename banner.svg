@@ -1,0 +1,100 @@
+<svg viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg" width="900" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1A1650"/>
+      <stop offset="45%"  stop-color="#2E2880"/>
+      <stop offset="100%" stop-color="#063D30"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7F77DD" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#7F77DD"/>
+      <stop offset="70%"  stop-color="#1D9E75"/>
+      <stop offset="100%" stop-color="#1D9E75" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="name-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#C8C4F8"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#9FE1CB"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="name-shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7F77DD" flood-opacity="0.6"/>
+    </filter>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#9FE1CB" opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="180" fill="url(#bg)"/>
+
+  <!-- Dot grid overlay -->
+  <rect width="900" height="180" fill="url(#dots)"/>
+
+  <!-- Decorative arc left -->
+  <circle cx="-30" cy="90" r="130" fill="none" stroke="#7F77DD" stroke-width="0.7" opacity="0.25"/>
+  <circle cx="-30" cy="90" r="90"  fill="none" stroke="#7F77DD" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Decorative arc right -->
+  <circle cx="930" cy="90" r="130" fill="none" stroke="#1D9E75" stroke-width="0.7" opacity="0.25"/>
+  <circle cx="930" cy="90" r="90"  fill="none" stroke="#1D9E75" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Glow blobs behind name -->
+  <ellipse cx="450" cy="68" rx="260" ry="45" fill="#3C3489" opacity="0.35" filter="url(#glow)"/>
+  <ellipse cx="220" cy="90" rx="90" ry="50" fill="#3C3489" opacity="0.20" filter="url(#glow)"/>
+  <ellipse cx="680" cy="90" rx="80" ry="45" fill="#085041" opacity="0.20" filter="url(#glow)"/>
+
+  <!-- Corner accent dots (top-right) -->
+  <circle cx="845" cy="22" r="4" fill="#9FE1CB" opacity="0.45"/>
+  <circle cx="862" cy="22" r="4" fill="#9FE1CB" opacity="0.30"/>
+  <circle cx="879" cy="22" r="4" fill="#9FE1CB" opacity="0.15"/>
+  <circle cx="845" cy="40" r="4" fill="#9FE1CB" opacity="0.30"/>
+  <circle cx="862" cy="40" r="4" fill="#9FE1CB" opacity="0.15"/>
+  <circle cx="845" cy="58" r="4" fill="#9FE1CB" opacity="0.15"/>
+
+  <!-- Corner accent dots (bottom-left) -->
+  <circle cx="55" cy="112" r="4" fill="#7F77DD" opacity="0.15"/>
+  <circle cx="38" cy="112" r="4" fill="#7F77DD" opacity="0.30"/>
+  <circle cx="21" cy="112" r="4" fill="#7F77DD" opacity="0.45"/>
+  <circle cx="55" cy="130" r="4" fill="#7F77DD" opacity="0.30"/>
+  <circle cx="38" cy="130" r="4" fill="#7F77DD" opacity="0.45"/>
+  <circle cx="21" cy="130" r="4" fill="#7F77DD" opacity="0.60"/>
+  <circle cx="55" cy="148" r="4" fill="#7F77DD" opacity="0.15"/>
+  <circle cx="38" cy="148" r="4" fill="#7F77DD" opacity="0.30"/>
+  <circle cx="21" cy="148" r="4" fill="#7F77DD" opacity="0.45"/>
+
+  <!-- NAME — large, gradient, prominent -->
+  <text x="450" y="72"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="46" font-weight="700" letter-spacing="1.5"
+        text-anchor="middle"
+        fill="url(#name-glow)"
+        filter="url(#name-shadow)">
+    Abhigyan Shivam
+  </text>
+
+  <!-- Thin accent rule under name -->
+  <rect x="310" y="84" width="280" height="0.8" fill="url(#line)" opacity="0.6"/>
+
+  <!-- Designation -->
+  <text x="450" y="112"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15" font-weight="400" letter-spacing="3.5"
+        text-anchor="middle" fill="#AFA9EC" opacity="0.92">
+    SENIOR DATA SCIENTIST / ML ENGINEER
+  </text>
+
+  <!-- Bottom separator line -->
+  <rect x="120" y="130" width="660" height="0.6" fill="url(#line)" opacity="0.45"/>
+
+  <!-- Bottom subtitle -->
+  <text x="450" y="155"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="12" font-weight="400" letter-spacing="2"
+        text-anchor="middle" fill="#7FC9B0" opacity="0.80">
+    Building AI Systems · Teaching AI on YouTube · Bengaluru, India
+  </text>
+</svg>
