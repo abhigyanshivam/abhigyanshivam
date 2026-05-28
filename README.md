@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Abhigyan Shivam — Senior Data Scientist & ML Engineer" width="100%" />
+  <img src="./assets/banner.png" alt="Abhigyan Shivam — Senior Data Scientist & ML Engineer" width="100%" />
 </div>
 
 <br/>
 
 ## 👋 Hey there! I'm Abhigyan
 
-📍 **Bengaluru, India** &nbsp;·&nbsp; Senior Data Scientist / ML Engineer &nbsp;·&nbsp; AI Educator
+📍 **Bengaluru, India** &nbsp;·&nbsp; Navigating the AI Ocean: A Guide to Sailing with LLMs &nbsp;·&nbsp; 
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&center=true&vCenter=true&width=600&lines=Specializing+in+LLMs+%C2%B7+RAG+systems+%C2%B7+AI+Agents+%C2%B7+MLOps;Building+production-grade+AI+systems;Teaching+AI+to+developers" alt="Typing SVG" />
