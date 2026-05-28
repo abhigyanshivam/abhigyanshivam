@@ -9,7 +9,7 @@
 📍 **Bengaluru, India** &nbsp;·&nbsp; Senior Data Scientist / ML Engineer &nbsp;·&nbsp; AI Educator
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&center=true&vCenter=true&width=600&lines=Specializing+in+LLMs+%C2%B7+RAG+systems+%C2%B7+AI+Agents+%C2%B7+MLOps;Building+production-grade+AI+systems;Teaching+AI+to+developers+on+YouTube" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&center=true&vCenter=true&width=600&lines=Specializing+in+LLMs+%C2%B7+RAG+systems+%C2%B7+AI+Agents+%C2%B7+MLOps;Building+production-grade+AI+systems;Teaching+AI+to+developers" alt="Typing SVG" />
 </div>
 
 <br/>
