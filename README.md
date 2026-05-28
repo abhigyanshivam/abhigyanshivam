@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.png" alt="Abhigyan Shivam — Senior Data Scientist & ML Engineer" width="100%" />
+  <img src="banner.png" alt="Abhigyan Shivam — Senior Data Scientist & ML Engineer" width="100%" />
 </div>
 
 <br/>
