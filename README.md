@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Your Name — Senior Data Scientist & ML Engineer" width="100%" />
+  <img src="./assets/banner.svg" alt="Abhigyan Shivam — Senior Data Scientist & ML Engineer" width="100%" />
 </div>
 
 <br/>
 
-## 👋 Hey there! I'm [Your Name]
+## 👋 Hey there! I'm Abhigyan
 
-📍 **Bengaluru, India** &nbsp;·&nbsp; Senior Data Scientist / ML Engineer &nbsp;·&nbsp; AI Educator on YouTube
+📍 **Bengaluru, India** &nbsp;·&nbsp; Senior Data Scientist / ML Engineer &nbsp;·&nbsp; AI Educator
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=1D9E75&center=true&vCenter=true&width=600&lines=Specializing+in+LLMs+%C2%B7+RAG+systems+%C2%B7+AI+Agents+%C2%B7+MLOps;Building+production-grade+AI+systems;Teaching+AI+to+developers+on+YouTube" alt="Typing SVG" />
@@ -15,8 +15,7 @@
 <br/>
 
 - 🤖 Building **production-grade AI systems** and agentic frameworks at work
-- 📺 Running a **YouTube channel** explaining AI concepts for developers
-- ✍️ Writing about AI breakthroughs, papers, and engineering on **Medium / Substack**
+- ✍️ Writing about AI breakthroughs, papers, and engineering 
 - 🎓 Always experimenting with the latest **open-source models and tools**
 - 🤝 Open to **research collaborations** and open-source contributions
 
@@ -25,12 +24,9 @@
 ## 🔗 Socials
 
 <div align="left">
-  <a href="https://linkedin.com/in/yourusername"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
-  <a href="https://youtube.com/@yourusername"><img src="https://img.shields.io/badge/YouTube-E24B4A?style=flat&logo=youtube&logoColor=white" alt="YouTube"/></a>&nbsp;
-  <a href="https://twitter.com/yourusername"><img src="https://img.shields.io/badge/X%20%2F%20Twitter-000000?style=flat&logo=x&logoColor=white" alt="X / Twitter"/></a>&nbsp;
-  <a href="https://medium.com/@yourusername"><img src="https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white" alt="Medium"/></a>&nbsp;
-  <a href="https://kaggle.com/yourusername"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white" alt="Kaggle"/></a>&nbsp;
-  <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://linkedin.com/in/abhigyan-shivam-a8b822a6/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
+  <a href="https://kaggle.com/abhigyanshivam"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white" alt="Kaggle"/></a>&nbsp;
+  <a href="shivam.abhigyan@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/></a>
 </div>
 
 ---
@@ -75,7 +71,6 @@
 
 ![Spark](https://img.shields.io/badge/Spark-E25600?style=flat&logo=apachespark&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-1D9E75?style=flat&logo=qdrant&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-FF4B4B?style=flat&logo=pinecone&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
 
@@ -95,9 +90,8 @@
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-- [AI Agents in 2026 — from hype to production reality](https://medium.com/@yourusername) — Medium · May 22, 2026 · 6 min read
-- [How RAG actually works (and where it breaks)](https://medium.com/@yourusername) — Medium · May 10, 2026 · 8 min read
-- [TurboQuant explained — 6× less memory for LLM inference](https://substack.com/@yourusername) — Substack · April 28, 2026 · 5 min read
+- [Future of AI - The loop of Economy, Consumers, entrepreneurs and Jobs.](https://www.linkedin.com/posts/abhigyan-shivam-a8b822a6_artificialintelligence-futureofwork-disruption-ugcPost-7433058260473012224-qgtO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABaL9YsBCAYf-RF4fAp4KwM6VYlSIq4qzHc) — LinkedIN · Feb, 2026 · 6 min read
+
 <!-- BLOG-POST-LIST:END -->
 
 > 🔄 Auto-updated once a day via the [GitHub Actions workflow](./.github/workflows/update-blog.yml) that fetches your RSS feed.
